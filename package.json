@@ -4,7 +4,7 @@
   "homepage": "https://github.com/NetEase/pomelo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NetEase/pomelo.git"
+    "url": "git+https://github.com/NetEase/pomelo.git"
   },
   "scripts": {
     "test": "grunt"
@@ -66,5 +66,13 @@
     "grunt-contrib-clean": "0.5.x",
     "grunt-contrib-jshint": "~0.8.0",
     "blanket": "~1.1.6"
-  }
+  },
+  "description": "Pomelo is a fast, scalable game server framework for [node.js](http://nodejs.org). It provides the basic development framework and many related components, including libraries and tools. Pomelo is also suitable for real-time web applications; its distributed architecture makes pomelo scale better than other real-time web frameworks.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
 }
