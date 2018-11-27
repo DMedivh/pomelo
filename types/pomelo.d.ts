@@ -600,7 +600,7 @@ export interface FrontendSession extends EventEmitter {
 
 export interface Session extends EventEmitter {
     uid: number | string;
-    id: number;
+    id: string;
     frontendId: string;
 
     toFrontendSession(): FrontendSession;
