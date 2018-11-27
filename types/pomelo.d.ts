@@ -581,11 +581,11 @@ export interface ServerComponent {
 }
 
 export interface FrontendSession extends EventEmitter {
-    uid: number | string;
+    uid: string;
 
-    bind(uid: number | string, cb: Function): void;
+    bind(uid: string, cb: Function): void;
 
-    unbind(uid: number | string, cb: Function): void;
+    unbind(uid: string, cb: Function): void;
 
     set(key: any, value: any): void;
 
@@ -599,15 +599,15 @@ export interface FrontendSession extends EventEmitter {
 }
 
 export interface Session extends EventEmitter {
-    uid: number | string;
+    uid: string;
     id: string;
     frontendId: string;
 
     toFrontendSession(): FrontendSession;
 
-    bind(uid: number | string): void;
+    bind(uid: string): void;
 
-    bind(uid: number | string): void;
+    bind(uid: string): void;
 
     set(key: string | object, value: any): void;
 
